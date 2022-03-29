@@ -1,0 +1,89 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="UTF-8" />
+    <title>JPN fisheries resourses</title>
+    <link rel="stylesheet" href="./css/jpnfisheries.css" />
+    <script
+      src="https://kit.fontawesome.com/869d434e02.js"
+      crossorigin="anonymous"
+    ></script>
+  </head>
+
+  <body>
+    <!-- カーソル -->
+    <div class="cursor"></div>
+    <div class="follower c-follower is-blend"></div>
+    <!-- 全体 -->
+    <div id="wrap">
+      <!-- 魚 -->
+      <div class="container">
+        <div class="fishes">
+          <div class="fish" data-name="maajione"><img src="./img/maaji.svg" /></div>
+          <div class="fish" data-name="torafugu"><img src="./img/torafugu.svg" /></div>
+          <div class="fish" data-name="surumeika"><img src="./img/surumeika.svg" /></div>
+          <div class="fish" data-name="kinmedai"><img src="./img/kinmedai.svg"/></div>
+          <div class="fish" data-name="hirameone"><img src="./img/hirame.svg" /></div>
+          <div class="fish" data-name="itohikidara"><img src="./img/itohikidara.svg" /></div>
+          <div class="fish" data-name="masabaone"><img src="./img/masaba.svg" /></div>
+          <div class="fish" data-name="maajitwo"><img src="./img/maaji.svg" /></div>
+          <div class="fish" data-name="maiwashione"><img src="./img/maiwashi.svg" /></div>
+          <div class="fish" data-name="maiwashitwo"><img src="./img/maiwashi.svg" /></div>
+          <div class="fish" data-name="hatahata"><img src="./img/hatahata.svg" /></div>
+          <div class="fish" data-name="hirametwo"><img src="./img/hirame.svg" /></div>
+          <div class="fish" data-name="akaebi"><img src="./img/akaebi.svg" /></div>
+          <div class="fish" data-name="yanagimushikarei"><img src="./img/yamagimushikarei.svg" /></div>
+          <div class="fish" data-name="masabatwo"><img src="./img/masaba.svg" /></div>
+        </div>
+      </div>
+
+      <!-- モーダル全体 -->
+      <div id="modal-back">
+        <!-- モーダル白枠 -->
+        <div id="modal-wrap">
+          <i class="fa-solid fa-xmark xcolor modalClose"></i>
+          <!-- モーダルコンテンツ -->
+          <div id="modal-content">
+            <!-- 縦並びコンテンツ① -->
+            <div id="textbox-and-image">
+              <!-- 横並びコンテンツ① -->
+              <div id="textbox">
+                <p id="fish-name">魚の名前</p>
+                <p id="habitat">生息地</p>
+                <div id="subinfo">
+                  <p id="level">資源レベル：</p>
+                  <img src="./img/level2-bar.svg" width="100%"/>
+                </div>
+              </div>
+              <!-- 横並びコンテンツ② -->
+              <div id="fish-image">
+                <img src="./img/masaba.svg" />
+              </div>
+            </div>
+            <!-- 縦並びコンテンツ② -->
+            <div id="charts-and-title-and-legend">
+              <div id="title-and-legend">
+                <div id="chart-title">漁獲量と資源量の推移</div>
+                <ul id="legend">
+                  <li id="catch">漁獲量</li><li id="stock">資源量</li></p>
+                </ul>
+              </div>
+              <canvas id="charts" width="400px" height="100px"></canvas>
+            </div>
+          </div>
+        </div>
+      </div>
+      <!-- 全体閉じ -->
+    </div>
+
+    <!-- javascript -->
+    <script
+      type="text/javascript"
+      src="https://cdn.jsdelivr.net/npm/chart.js@2.9.3/dist/Chart.min.js"
+    ></script>
+    <script src="./js/data.js"></script>
+    <script src="scripts/jquery-3.4.1.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/2.1.1/TweenMax.min.js"></script>
+    <script src="./js/jpnfisheries.js"></script>
+  </body>
+</html>
