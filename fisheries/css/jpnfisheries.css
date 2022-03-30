@@ -7,6 +7,10 @@ body {
   cursor: none;
   background-image: url(../img/fishbackground.jpg);
   background-size: cover;
+  font-family: "Avenir", "Helvetica Neue", "Helvetica", "Arial", "Hiragino Sans",
+    "ヒラギノ角ゴシック", YuGothic, "Yu Gothic", "メイリオ", Meiryo,
+    "MS Ｐゴシック", "MS PGothic";
+  font-size: 100%;
 }
 
 .container {
