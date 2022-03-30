@@ -22,6 +22,7 @@ const chart = new Chart(ctx, {
   type: "line",
   data: fishInfo["maajione"].chartData,
   options: {
+    duration: 1000,
     legend: {
       display: false,
     },
